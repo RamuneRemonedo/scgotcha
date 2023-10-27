@@ -1,7 +1,5 @@
 package net.ramuremo.scgotcha.model;
 
-import net.ramuremo.scgotcha.Badges;
-
 public interface User {
     String avatarUrl();
     String city();
@@ -26,7 +24,7 @@ public interface User {
     String uri();
     String urn();
     String username();
-    Visuals visuals();
+    VisualsField visuals();
     Badges badges();
     String stationUrn();
     String stationPermalink();

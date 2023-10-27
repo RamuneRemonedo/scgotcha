@@ -1,0 +1,353 @@
+[
+    {
+        "hydratable": "anonymousId",
+        "data": "328518-33981-114453-870318"
+    },
+    {
+        "hydratable": "features",
+        "data": {
+            "features": [
+                "mobi_webauth_oauth_mode",
+                "cd_repost_to_artists",
+                "mobi_report_content_links",
+                "checkout_use_new_plan_picker",
+                "v2_use_onetrust_tcfv2_us_ca",
+                "mobi_enable_onetrust_tcfv2",
+                "mobi_tracking_send_session_id",
+                "mobi_use_onetrust_eu1",
+                "mobi_use_onetrust_gb",
+                "mobi_use_onetrust_tcfv2_us_ca",
+                "v2_use_onetrust_user_id_eu2",
+                "v2_enable_sourcepoint_tcfv2",
+                "mobi_peace_ukraine_logo_takeover",
+                "mobi_use_auth_internal_analytics",
+                "v2_peace_ukraine_logo_takeover",
+                "mobi_use_onetrust_tcfv2_eu2",
+                "checkout_send_segment_events_to_event_gateway",
+                "trolley",
+                "mobi_use_onetrust_user_id_eu1",
+                "mobi_use_onetrust_user_id_ex_us",
+                "mobi_use_onetrust_tcfv2_eu1",
+                "v2_post_with_caption",
+                "v2_report_content_links",
+                "mobi_use_dwt",
+                "v2_use_onetrust_tcfv2_eu1",
+                "mobi_use_onetrust_eu4",
+                "featured_artists_banner",
+                "v2_repost_redirect_page",
+                "v2_use_onetrust_gb",
+                "use_onetrust_async",
+                "v2_signals_collection",
+                "v2_track_level_distro_to_plan_picker",
+                "v2_direct_support_link",
+                "v2_api_auth_sign_out",
+                "v2_ie11_support_end",
+                "v2_hq_file_storage_release",
+                "mobi_use_onetrust_user_id_eu2",
+                "creator_plan_names_repositioning",
+                "v2_use_onetrust_eu4",
+                "v2_stories_onboarding",
+                "v2_use_dwt",
+                "v2_use_updated_alert_banner_quota_upsell",
+                "mobi_nea_report_content_links",
+                "v2_enable_onetrust",
+                "mobi_nea_report_content_form",
+                "v2_import_playlist_experiment",
+                "v2_disable_sidebar_comments_count",
+                "v2_use_onetrust_eu2",
+                "next_pro_first_fans",
+                "fpi_messaging_drawer",
+                "v2_use_onetrust_us",
+                "mobi_use_audio_ads",
+                "v2_comment_sorting",
+                "checkout_use_recurly_with_paypal",
+                "v2_use_onetrust_tcfv2_ex_us",
+                "v2_show_for_artists_link",
+                "mobi_use_onetrust_eu3",
+                "mobi_use_onetrust_elsewhere",
+                "mobi_report_content_form",
+                "v2_use_onetrust_eu3",
+                "mobi_use_onetrust_us",
+                "v2_oscp_german_tax_fields_support",
+                "v2_fallback_queue_for_search",
+                "v2_use_onetrust_user_id_ex_us",
+                "v2_use_new_connect",
+                "v2_use_onetrust_tcfv2_eu2",
+                "v2_send_segment_events_to_event_gateway",
+                "v2_use_onetrust_eu1",
+                "v2_enable_sourcepoint",
+                "v2_repost_with_caption_graphql",
+                "mobi_use_onetrust_tcfv2_ex_us",
+                "v2_tags_recent_tracks",
+                "mobi_use_onetrust_eu2",
+                "v2_use_onetrust_elsewhere",
+                "checkout_use_dwt",
+                "mobi_sign_in_experiment",
+                "mobi_enable_onetrust",
+                "v2_nea_report_content_links",
+                "v2_webauth_use_local_tracking",
+                "v2_can_see_insights",
+                "fpi_20_fans_rollout",
+                "mobi_trinity",
+                "v2_webauth_oauth_mode",
+                "v2_google_one_tap",
+                "v2_enable_pwa",
+                "mobi_use_hls_hack",
+                "v2_stories",
+                "v2_use_onetrust_user_id_eu1",
+                "v2_use_onetrust_user_id_global",
+                "use_recurly_checkout",
+                "v2_show_side_by_side_upsell_experience",
+                "v2_enable_onetrust_tcfv2",
+                "v2_enable_tcfv2_consent_string_cache",
+                "v2_track_manager_redirection",
+                "mobi_send_segment_events_to_event_gateway",
+                "use_on_soundcloud_short_links"
+            ]
+        }
+    },
+    {
+        "hydratable": "experiments",
+        "data": {}
+    },
+    {
+        "hydratable": "geoip",
+        "data": {
+            "country_code": "JP",
+            "country_name": "Japan",
+            "region": "22",
+            "city": "Fujinomiya",
+            "postal_code": "418-0061",
+            "latitude": 35.2362,
+            "longitude": 138.6113
+        }
+    },
+    {
+        "hydratable": "privacySettings",
+        "data": {
+            "allows_messages_from_unfollowed_users": false,
+            "analytics_opt_in": true,
+            "communications_opt_in": true,
+            "targeted_advertising_opt_in": false,
+            "legislation": []
+        }
+    },
+    {
+        "hydratable": "trackingBrowserTabId",
+        "data": "abe40c"
+    },
+    {
+        "hydratable": "user",
+        "data": {
+            "avatar_url": "https://i1.sndcdn.com/avatars-Kt7NLSnOX9rIYTPW-mpv6GA-large.jpg",
+            "city": "",
+            "comments_count": 0,
+            "country_code": null,
+            "created_at": "2016-03-13T05:53:21Z",
+            "creator_subscriptions": [
+                {
+                    "product": {
+                        "id": "free"
+                    }
+                }
+            ],
+            "creator_subscription": {
+                "product": {
+                    "id": "free"
+                }
+            },
+            "description": "main: @imkotori\n\nKel Type Beats",
+            "followers_count": 3865,
+            "followings_count": 4,
+            "first_name": "",
+            "full_name": "",
+            "groups_count": 0,
+            "id": 211793852,
+            "kind": "user",
+            "last_modified": "2023-09-08T18:01:10Z",
+            "last_name": "",
+            "likes_count": 81,
+            "playlist_likes_count": 11,
+            "permalink": "djkelcore",
+            "permalink_url": "https://soundcloud.com/djkelcore",
+            "playlist_count": 0,
+            "reposts_count": null,
+            "track_count": 9,
+            "uri": "https://api.soundcloud.com/users/211793852",
+            "urn": "soundcloud:users:211793852",
+            "username": "DJ KELSEY",
+            "verified": false,
+            "visuals": {
+                "urn": "soundcloud:users:211793852",
+                "enabled": true,
+                "visuals": [
+                    {
+                        "urn": "soundcloud:visuals:200531199",
+                        "entry_time": 0,
+                        "visual_url": "https://i1.sndcdn.com/visuals-000211793852-8VQqpg-original.jpg"
+                    }
+                ],
+                "tracking": null
+            },
+            "badges": {
+                "pro": false,
+                "pro_unlimited": false,
+                "verified": false
+            },
+            "station_urn": "soundcloud:system-playlists:artist-stations:211793852",
+            "station_permalink": "artist-stations:211793852",
+            "url": "/djkelcore"
+        }
+    },
+    {
+        "hydratable": "sound",
+        "data": {
+            "artwork_url": "https://i1.sndcdn.com/artworks-5zcN0DK5jnK0JcSK-ob3oXA-large.jpg",
+            "caption": null,
+            "commentable": true,
+            "comment_count": 21,
+            "created_at": "2021-09-29T06:37:01Z",
+            "description": "og: https://soundcloud.com/pincode8485/nomu-dress-limeboiler",
+            "downloadable": false,
+            "download_count": 0,
+            "duration": 101851,
+            "full_duration": 101851,
+            "embeddable_by": "all",
+            "genre": "KELCORE",
+            "has_downloads_left": false,
+            "id": 1132864861,
+            "kind": "track",
+            "label_name": null,
+            "last_modified": "2022-04-02T22:08:59Z",
+            "license": "all-rights-reserved",
+            "likes_count": 376,
+            "permalink": "dress",
+            "permalink_url": "https://soundcloud.com/djkelcore/dress",
+            "playback_count": 11101,
+            "public": true,
+            "publisher_metadata": {
+                "id": 1132864861,
+                "urn": "soundcloud:tracks:1132864861",
+                "contains_music": true
+            },
+            "purchase_title": null,
+            "purchase_url": null,
+            "release_date": null,
+            "reposts_count": 40,
+            "secret_token": null,
+            "sharing": "public",
+            "state": "finished",
+            "streamable": true,
+            "tag_list": "",
+            "title": "nomu \u0026 8485 - dress (DJ KELSEY EDIT)",
+            "track_format": "single-track",
+            "uri": "https://api.soundcloud.com/tracks/1132864861",
+            "urn": "soundcloud:tracks:1132864861",
+            "user_id": 211793852,
+            "visuals": null,
+            "waveform_url": "https://wave.sndcdn.com/GxZgIuR6UoYG_m.json",
+            "display_date": "2021-09-29T17:08:28Z",
+            "media": {
+                "transcodings": [
+                    {
+                        "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:1132864861/4cd7578a-eb49-44aa-b966-4782ff1e61d8/stream/hls",
+                        "preset": "mp3_0_1",
+                        "duration": 101851,
+                        "snipped": false,
+                        "format": {
+                            "protocol": "hls",
+                            "mime_type": "audio/mpeg"
+                        },
+                        "quality": "sq"
+                    },
+                    {
+                        "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:1132864861/4cd7578a-eb49-44aa-b966-4782ff1e61d8/stream/progressive",
+                        "preset": "mp3_0_1",
+                        "duration": 101851,
+                        "snipped": false,
+                        "format": {
+                            "protocol": "progressive",
+                            "mime_type": "audio/mpeg"
+                        },
+                        "quality": "sq"
+                    },
+                    {
+                        "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:1132864861/a2a7828a-24f4-4693-b743-5b7f212c799c/stream/hls",
+                        "preset": "opus_0_0",
+                        "duration": 101832,
+                        "snipped": false,
+                        "format": {
+                            "protocol": "hls",
+                            "mime_type": "audio/ogg; codecs=\"opus\""
+                        },
+                        "quality": "sq"
+                    }
+                ]
+            },
+            "station_urn": "soundcloud:system-playlists:track-stations:1132864861",
+            "station_permalink": "track-stations:1132864861",
+            "track_authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnZW8iOiJKUCIsInN1YiI6IiIsInJpZCI6IjVmZTFjZjI5LTAxMDUtNDUyNS1iZDhjLTliYzUyOGQ1YzEwNSIsImlhdCI6MTY5ODMxMzY3Mn0.5U-v8YBBYXBc9ITALXtZhYUl-cCfPCWlU0Zxyi8knA8",
+            "monetization_model": "NOT_APPLICABLE",
+            "policy": "ALLOW",
+            "user": {
+                "avatar_url": "https://i1.sndcdn.com/avatars-Kt7NLSnOX9rIYTPW-mpv6GA-large.jpg",
+                "city": "",
+                "comments_count": 0,
+                "country_code": null,
+                "created_at": "2016-03-13T05:53:21Z",
+                "creator_subscriptions": [
+                    {
+                        "product": {
+                            "id": "free"
+                        }
+                    }
+                ],
+                "creator_subscription": {
+                    "product": {
+                        "id": "free"
+                    }
+                },
+                "description": "main: @imkotori\n\nKel Type Beats",
+                "followers_count": 3865,
+                "followings_count": 4,
+                "first_name": "",
+                "full_name": "",
+                "groups_count": 0,
+                "id": 211793852,
+                "kind": "user",
+                "last_modified": "2023-09-08T18:01:10Z",
+                "last_name": "",
+                "likes_count": 81,
+                "playlist_likes_count": 11,
+                "permalink": "djkelcore",
+                "permalink_url": "https://soundcloud.com/djkelcore",
+                "playlist_count": 0,
+                "reposts_count": null,
+                "track_count": 9,
+                "uri": "https://api.soundcloud.com/users/211793852",
+                "urn": "soundcloud:users:211793852",
+                "username": "DJ KELSEY",
+                "verified": false,
+                "visuals": {
+                    "urn": "soundcloud:users:211793852",
+                    "enabled": true,
+                    "visuals": [
+                        {
+                            "urn": "soundcloud:visuals:200531199",
+                            "entry_time": 0,
+                            "visual_url": "https://i1.sndcdn.com/visuals-000211793852-8VQqpg-original.jpg"
+                        }
+                    ],
+                    "tracking": null
+                },
+                "badges": {
+                    "pro": false,
+                    "pro_unlimited": false,
+                    "verified": false
+                },
+                "station_urn": "soundcloud:system-playlists:artist-stations:211793852",
+                "station_permalink": "artist-stations:211793852"
+            }
+        }
+    }
+]

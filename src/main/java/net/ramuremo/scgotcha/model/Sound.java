@@ -1,99 +1,52 @@
 package net.ramuremo.scgotcha.model;
 
 public interface Sound {
-    String artwork_url();
-
+    String artworkUrl();
     String caption();
-
     boolean commentable();
-
-    long comment_count();
-
-    String created_at();
-
+    long commentCount();
+    String createdAt();
     String description();
-
     boolean downloadable();
-
-    long download_count();
-
+    long downloadCount();
     long duration();
-
-    long full_duration();
-
-    String embeddable_by();
-
+    long fullDuration();
+    String embeddableBy();
     String genre();
-
-    boolean has_downloads_left();
-
+    boolean hasDownloadsLeft();
     long id();
-
     String kind();
-
-    String label_name();
-
-    String last_modified();
-
+    String labelName();
+    String lastModified();
     String license();
-
-    long likes_count();
-
+    long likesCount();
     String permalink();
-
-    String permalink_url();
-
-    long playback_count();
-
+    String permalinkUrl();
+    long playbackCount();
     boolean pub();
-
     PublisherMetadata publisherMetadata();
-
-    String purchase_title();
-
-    String purchase_url();
-
-    String release_date();
-
-    long reposts_count();
-
-    String secret_token();
-
+    String purchaseTitle();
+    String purchaseUrl();
+    String releaseDate();
+    long repostsCount();
+    String secretToken();
     String sharing();
-
     String state();
-
     boolean streamable();
-
-    String tag_list();
-
+    String tagList();
     String title();
-
-    String track_format();
-
+    String trackFormat();
     String uri();
-
     String urn();
-
-    long user_id();
-
-    Visuals visuals();
-
-    String waveform_url();
-
-    String display_date();
-
+    long userId();
+    VisualsField visuals();
+    String waveformUrl();
+    String displayDate();
     Media media();
-
-    String station_urn();
-
-    String station_permalink();
-
-    String track_authorization();
-
-    String monetization_model();
-
+    String stationUrn();
+    String stationPermalink();
+    String trackAuthorization();
+    String monetizationModel();
     String policy();
-
     User user();
 }
