@@ -7,22 +7,27 @@ import net.ramuremo.scgotcha.model.Media;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MediaInterpreter {
-    public static Media interpret(JsonObject json) {
+public class MediaInterpreter implements Interpreter<Media> {
+
+    @Override
+    public Media interpret(JsonObject json) {
         if (json == null) return null;
         return () -> {
             List<Media.Transcoding> transcodings = new ArrayList<>();
-            for (JsonElement transcoding : json.getAsJsonArray("transcodings")) {
+            for (JsonElement transcoding : json.get("transcodings").getAsJsonArray()) {
+                System.out.println(transcoding);
                 transcodings.add(
-                        TranscodingInterpreter.interpret(transcoding.getAsJsonObject())
+                        new TranscodingInterpreter().interpret(transcoding.getAsJsonObject())
                 );
             }
             return transcodings;
         };
     }
 
-    public static class TranscodingInterpreter {
-        public static Media.Transcoding interpret(JsonObject json) {
+    public static class TranscodingInterpreter implements Interpreter<Media.Transcoding> {
+
+        @Override
+        public Media.Transcoding interpret(JsonObject json) {
             if (json == null) return null;
             return new Media.Transcoding() {
                 @Override
@@ -47,7 +52,7 @@ public class MediaInterpreter {
 
                 @Override
                 public Format format() {
-                    return FormatInterpreter.interpret(json.getAsJsonObject("format"));
+                    return new FormatInterpreter().interpret(json.getAsJsonObject("format"));
                 }
 
                 @Override
@@ -57,8 +62,10 @@ public class MediaInterpreter {
             };
         }
 
-        public static class FormatInterpreter {
-            public static Media.Transcoding.Format interpret(JsonObject json) {
+        public static class FormatInterpreter implements Interpreter<Media.Transcoding.Format> {
+
+            @Override
+            public Media.Transcoding.Format interpret(JsonObject json) {
                 if (json == null) return null;
                 return new Media.Transcoding.Format() {
                     @Override

@@ -3,8 +3,10 @@ package net.ramuremo.scgotcha.interpreter;
 import com.google.gson.JsonObject;
 import net.ramuremo.scgotcha.model.Visuals;
 
-public class VisualsInterpreter {
-    public static Visuals interpret(JsonObject json) {
+public class VisualsInterpreter implements Interpreter<Visuals> {
+
+    @Override
+    public Visuals interpret(JsonObject json) {
         if (json == null) return null;
         return new Visuals() {
             @Override

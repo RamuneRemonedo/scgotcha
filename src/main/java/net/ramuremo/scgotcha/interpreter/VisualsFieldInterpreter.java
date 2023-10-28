@@ -8,8 +8,10 @@ import net.ramuremo.scgotcha.model.VisualsField;
 import java.util.ArrayList;
 import java.util.List;
 
-public class VisualsFieldInterpreter {
-    public static VisualsField interpret(JsonObject json) {
+public class VisualsFieldInterpreter implements Interpreter<VisualsField>{
+
+    @Override
+    public VisualsField interpret(JsonObject json) {
         if (json == null) return null;
         return new VisualsField() {
             @Override
@@ -26,7 +28,7 @@ public class VisualsFieldInterpreter {
             public List<Visuals> visuals() {
                 List<Visuals> visuals = new ArrayList<>();
                 for (JsonElement element : json.get("visuals").getAsJsonArray()) {
-                    visuals.add(VisualsInterpreter.interpret(element.getAsJsonObject()));
+                    visuals.add(new VisualsInterpreter().interpret(element.getAsJsonObject()));
                 }
                 return visuals;
             }

@@ -3,8 +3,10 @@ package net.ramuremo.scgotcha.interpreter;
 import com.google.gson.JsonObject;
 import net.ramuremo.scgotcha.model.PublisherMetadata;
 
-public class PublisherMetadataInterpreter {
-    public static PublisherMetadata interpret(JsonObject json) {
+public class PublisherMetadataInterpreter implements Interpreter<PublisherMetadata> {
+
+    @Override
+    public PublisherMetadata interpret(JsonObject json) {
         if (json == null) return null;
         return new PublisherMetadata() {
             @Override

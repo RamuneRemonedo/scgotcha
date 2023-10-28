@@ -1,353 +1,679 @@
-[
-    {
-        "hydratable": "anonymousId",
-        "data": "328518-33981-114453-870318"
-    },
-    {
-        "hydratable": "features",
-        "data": {
-            "features": [
-                "mobi_webauth_oauth_mode",
-                "cd_repost_to_artists",
-                "mobi_report_content_links",
-                "checkout_use_new_plan_picker",
-                "v2_use_onetrust_tcfv2_us_ca",
-                "mobi_enable_onetrust_tcfv2",
-                "mobi_tracking_send_session_id",
-                "mobi_use_onetrust_eu1",
-                "mobi_use_onetrust_gb",
-                "mobi_use_onetrust_tcfv2_us_ca",
-                "v2_use_onetrust_user_id_eu2",
-                "v2_enable_sourcepoint_tcfv2",
-                "mobi_peace_ukraine_logo_takeover",
-                "mobi_use_auth_internal_analytics",
-                "v2_peace_ukraine_logo_takeover",
-                "mobi_use_onetrust_tcfv2_eu2",
-                "checkout_send_segment_events_to_event_gateway",
-                "trolley",
-                "mobi_use_onetrust_user_id_eu1",
-                "mobi_use_onetrust_user_id_ex_us",
-                "mobi_use_onetrust_tcfv2_eu1",
-                "v2_post_with_caption",
-                "v2_report_content_links",
-                "mobi_use_dwt",
-                "v2_use_onetrust_tcfv2_eu1",
-                "mobi_use_onetrust_eu4",
-                "featured_artists_banner",
-                "v2_repost_redirect_page",
-                "v2_use_onetrust_gb",
-                "use_onetrust_async",
-                "v2_signals_collection",
-                "v2_track_level_distro_to_plan_picker",
-                "v2_direct_support_link",
-                "v2_api_auth_sign_out",
-                "v2_ie11_support_end",
-                "v2_hq_file_storage_release",
-                "mobi_use_onetrust_user_id_eu2",
-                "creator_plan_names_repositioning",
-                "v2_use_onetrust_eu4",
-                "v2_stories_onboarding",
-                "v2_use_dwt",
-                "v2_use_updated_alert_banner_quota_upsell",
-                "mobi_nea_report_content_links",
-                "v2_enable_onetrust",
-                "mobi_nea_report_content_form",
-                "v2_import_playlist_experiment",
-                "v2_disable_sidebar_comments_count",
-                "v2_use_onetrust_eu2",
-                "next_pro_first_fans",
-                "fpi_messaging_drawer",
-                "v2_use_onetrust_us",
-                "mobi_use_audio_ads",
-                "v2_comment_sorting",
-                "checkout_use_recurly_with_paypal",
-                "v2_use_onetrust_tcfv2_ex_us",
-                "v2_show_for_artists_link",
-                "mobi_use_onetrust_eu3",
-                "mobi_use_onetrust_elsewhere",
-                "mobi_report_content_form",
-                "v2_use_onetrust_eu3",
-                "mobi_use_onetrust_us",
-                "v2_oscp_german_tax_fields_support",
-                "v2_fallback_queue_for_search",
-                "v2_use_onetrust_user_id_ex_us",
-                "v2_use_new_connect",
-                "v2_use_onetrust_tcfv2_eu2",
-                "v2_send_segment_events_to_event_gateway",
-                "v2_use_onetrust_eu1",
-                "v2_enable_sourcepoint",
-                "v2_repost_with_caption_graphql",
-                "mobi_use_onetrust_tcfv2_ex_us",
-                "v2_tags_recent_tracks",
-                "mobi_use_onetrust_eu2",
-                "v2_use_onetrust_elsewhere",
-                "checkout_use_dwt",
-                "mobi_sign_in_experiment",
-                "mobi_enable_onetrust",
-                "v2_nea_report_content_links",
-                "v2_webauth_use_local_tracking",
-                "v2_can_see_insights",
-                "fpi_20_fans_rollout",
-                "mobi_trinity",
-                "v2_webauth_oauth_mode",
-                "v2_google_one_tap",
-                "v2_enable_pwa",
-                "mobi_use_hls_hack",
-                "v2_stories",
-                "v2_use_onetrust_user_id_eu1",
-                "v2_use_onetrust_user_id_global",
-                "use_recurly_checkout",
-                "v2_show_side_by_side_upsell_experience",
-                "v2_enable_onetrust_tcfv2",
-                "v2_enable_tcfv2_consent_string_cache",
-                "v2_track_manager_redirection",
-                "mobi_send_segment_events_to_event_gateway",
-                "use_on_soundcloud_short_links"
-            ]
-        }
-    },
-    {
-        "hydratable": "experiments",
-        "data": {}
-    },
-    {
-        "hydratable": "geoip",
-        "data": {
-            "country_code": "JP",
-            "country_name": "Japan",
-            "region": "22",
-            "city": "Fujinomiya",
-            "postal_code": "418-0061",
-            "latitude": 35.2362,
-            "longitude": 138.6113
-        }
-    },
-    {
-        "hydratable": "privacySettings",
-        "data": {
-            "allows_messages_from_unfollowed_users": false,
-            "analytics_opt_in": true,
-            "communications_opt_in": true,
-            "targeted_advertising_opt_in": false,
-            "legislation": []
-        }
-    },
-    {
-        "hydratable": "trackingBrowserTabId",
-        "data": "abe40c"
-    },
-    {
-        "hydratable": "user",
-        "data": {
-            "avatar_url": "https://i1.sndcdn.com/avatars-Kt7NLSnOX9rIYTPW-mpv6GA-large.jpg",
-            "city": "",
+{
+    "hydratable": "playlist",
+    "data": {
+        "artwork_url": "https://i1.sndcdn.com/artworks-lbBnaTatCpwYozYP-yTEEOg-large.jpg",
+        "created_at": "2023-02-01T13:05:23Z",
+        "description": "",
+        "duration": 1065404,
+        "embeddable_by": "all",
+        "genre": "Dance \u0026 EDM",
+        "id": 1564008931,
+        "kind": "playlist",
+        "label_name": "",
+        "last_modified": "2023-07-14T17:59:10Z",
+        "license": "all-rights-reserved",
+        "likes_count": 448,
+        "managed_by_feeds": false,
+        "permalink": "identity",
+        "permalink_url": "https://soundcloud.com/geoxor/sets/identity",
+        "public": true,
+        "purchase_title": null,
+        "purchase_url": null,
+        "release_date": "2023-07-14T00:00:00Z",
+        "reposts_count": 52,
+        "secret_token": null,
+        "sharing": "public",
+        "tag_list": "",
+        "title": "Identity",
+        "uri": "https://api.soundcloud.com/playlists/1564008931",
+        "user_id": 100230899,
+        "set_type": "album",
+        "is_album": true,
+        "published_at": "2023-07-14T17:59:10Z",
+        "display_date": "2023-07-14T17:59:10Z",
+        "user": {
+            "avatar_url": "https://i1.sndcdn.com/avatars-zKuttZ7yeawKLQ1B-lQNjHQ-large.jpg",
+            "city": "Florina",
             "comments_count": 0,
-            "country_code": null,
-            "created_at": "2016-03-13T05:53:21Z",
+            "country_code": "GR",
+            "created_at": "2014-06-16T16:26:26Z",
             "creator_subscriptions": [
                 {
                     "product": {
-                        "id": "free"
+                        "id": "creator-pro"
                     }
                 }
             ],
             "creator_subscription": {
                 "product": {
-                    "id": "free"
+                    "id": "creator-pro"
                 }
             },
-            "description": "main: @imkotori\n\nKel Type Beats",
-            "followers_count": 3865,
-            "followings_count": 4,
-            "first_name": "",
-            "full_name": "",
+            "description": "Discord Server: https://discord.gg/geoxor\nDonate: paypal.me/georgetsotsos\nBanner design made by Aduare\nManagement \u0026 Booking: management@geoxor.moe\n\nSupported by:\n@nocopyrightsounds\n@dsv-audio\n@dubstepgutter\n@knifepartyinc\n@ninety9lives\n@paradoxium\n@glitchhopcommunity\n@mostaddictivemusic\n@xkitomusic\n@divr\n\nFAQ:\nWhen did you start producing?\n - I started around 2012\n\nAre you a girl?\n - No I'm not a girl, the artwork is made by artists I commission\n\nWhat program do you use?\n - I started with FL Studio, but since 2017 I've been using Ableton\n\nHow is your name pronounced?\n - Ge-oh-ksor\n\nWhat's your favorite genre?\n - Everything\n\nWhere are you from?\n - Greece\n\nWho are your inspirations?\n- @officialpandaeyes, @tisoki \u0026 @skrillex",
+            "followers_count": 40424,
+            "followings_count": 318,
+            "first_name": "George",
+            "full_name": "George | FAQ in description",
             "groups_count": 0,
-            "id": 211793852,
+            "id": 100230899,
             "kind": "user",
-            "last_modified": "2023-09-08T18:01:10Z",
-            "last_name": "",
-            "likes_count": 81,
-            "playlist_likes_count": 11,
-            "permalink": "djkelcore",
-            "permalink_url": "https://soundcloud.com/djkelcore",
-            "playlist_count": 0,
+            "last_modified": "2023-09-20T14:50:59Z",
+            "last_name": "| FAQ in description",
+            "likes_count": 723,
+            "playlist_likes_count": 4,
+            "permalink": "geoxor",
+            "permalink_url": "https://soundcloud.com/geoxor",
+            "playlist_count": 5,
             "reposts_count": null,
-            "track_count": 9,
-            "uri": "https://api.soundcloud.com/users/211793852",
-            "urn": "soundcloud:users:211793852",
-            "username": "DJ KELSEY",
-            "verified": false,
+            "track_count": 66,
+            "uri": "https://api.soundcloud.com/users/100230899",
+            "urn": "soundcloud:users:100230899",
+            "username": "Geoxor",
+            "verified": true,
             "visuals": {
-                "urn": "soundcloud:users:211793852",
+                "urn": "soundcloud:users:100230899",
                 "enabled": true,
                 "visuals": [
                     {
-                        "urn": "soundcloud:visuals:200531199",
+                        "urn": "soundcloud:visuals:136264593",
                         "entry_time": 0,
-                        "visual_url": "https://i1.sndcdn.com/visuals-000211793852-8VQqpg-original.jpg"
+                        "visual_url": "https://i1.sndcdn.com/visuals-000100230899-cuNbKF-original.jpg",
+                        "link": "http://beta.geoxor.moe"
                     }
                 ],
                 "tracking": null
             },
             "badges": {
-                "pro": false,
+                "pro": true,
                 "pro_unlimited": false,
-                "verified": false
+                "verified": true
             },
-            "station_urn": "soundcloud:system-playlists:artist-stations:211793852",
-            "station_permalink": "artist-stations:211793852",
-            "url": "/djkelcore"
-        }
-    },
-    {
-        "hydratable": "sound",
-        "data": {
-            "artwork_url": "https://i1.sndcdn.com/artworks-5zcN0DK5jnK0JcSK-ob3oXA-large.jpg",
-            "caption": null,
-            "commentable": true,
-            "comment_count": 21,
-            "created_at": "2021-09-29T06:37:01Z",
-            "description": "og: https://soundcloud.com/pincode8485/nomu-dress-limeboiler",
-            "downloadable": false,
-            "download_count": 0,
-            "duration": 101851,
-            "full_duration": 101851,
-            "embeddable_by": "all",
-            "genre": "KELCORE",
-            "has_downloads_left": false,
-            "id": 1132864861,
-            "kind": "track",
-            "label_name": null,
-            "last_modified": "2022-04-02T22:08:59Z",
-            "license": "all-rights-reserved",
-            "likes_count": 376,
-            "permalink": "dress",
-            "permalink_url": "https://soundcloud.com/djkelcore/dress",
-            "playback_count": 11101,
-            "public": true,
-            "publisher_metadata": {
-                "id": 1132864861,
-                "urn": "soundcloud:tracks:1132864861",
-                "contains_music": true
-            },
-            "purchase_title": null,
-            "purchase_url": null,
-            "release_date": null,
-            "reposts_count": 40,
-            "secret_token": null,
-            "sharing": "public",
-            "state": "finished",
-            "streamable": true,
-            "tag_list": "",
-            "title": "nomu \u0026 8485 - dress (DJ KELSEY EDIT)",
-            "track_format": "single-track",
-            "uri": "https://api.soundcloud.com/tracks/1132864861",
-            "urn": "soundcloud:tracks:1132864861",
-            "user_id": 211793852,
-            "visuals": null,
-            "waveform_url": "https://wave.sndcdn.com/GxZgIuR6UoYG_m.json",
-            "display_date": "2021-09-29T17:08:28Z",
-            "media": {
-                "transcodings": [
-                    {
-                        "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:1132864861/4cd7578a-eb49-44aa-b966-4782ff1e61d8/stream/hls",
-                        "preset": "mp3_0_1",
-                        "duration": 101851,
-                        "snipped": false,
-                        "format": {
-                            "protocol": "hls",
-                            "mime_type": "audio/mpeg"
-                        },
-                        "quality": "sq"
-                    },
-                    {
-                        "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:1132864861/4cd7578a-eb49-44aa-b966-4782ff1e61d8/stream/progressive",
-                        "preset": "mp3_0_1",
-                        "duration": 101851,
-                        "snipped": false,
-                        "format": {
-                            "protocol": "progressive",
-                            "mime_type": "audio/mpeg"
-                        },
-                        "quality": "sq"
-                    },
-                    {
-                        "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:1132864861/a2a7828a-24f4-4693-b743-5b7f212c799c/stream/hls",
-                        "preset": "opus_0_0",
-                        "duration": 101832,
-                        "snipped": false,
-                        "format": {
-                            "protocol": "hls",
-                            "mime_type": "audio/ogg; codecs=\"opus\""
-                        },
-                        "quality": "sq"
-                    }
-                ]
-            },
-            "station_urn": "soundcloud:system-playlists:track-stations:1132864861",
-            "station_permalink": "track-stations:1132864861",
-            "track_authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnZW8iOiJKUCIsInN1YiI6IiIsInJpZCI6IjVmZTFjZjI5LTAxMDUtNDUyNS1iZDhjLTliYzUyOGQ1YzEwNSIsImlhdCI6MTY5ODMxMzY3Mn0.5U-v8YBBYXBc9ITALXtZhYUl-cCfPCWlU0Zxyi8knA8",
-            "monetization_model": "NOT_APPLICABLE",
-            "policy": "ALLOW",
-            "user": {
-                "avatar_url": "https://i1.sndcdn.com/avatars-Kt7NLSnOX9rIYTPW-mpv6GA-large.jpg",
-                "city": "",
-                "comments_count": 0,
-                "country_code": null,
-                "created_at": "2016-03-13T05:53:21Z",
-                "creator_subscriptions": [
-                    {
-                        "product": {
-                            "id": "free"
-                        }
-                    }
-                ],
-                "creator_subscription": {
-                    "product": {
-                        "id": "free"
-                    }
+            "station_urn": "soundcloud:system-playlists:artist-stations:100230899",
+            "station_permalink": "artist-stations:100230899"
+        },
+        "tracks": [
+            {
+                "artwork_url": "https://i1.sndcdn.com/artworks-lbBnaTatCpwYozYP-yTEEOg-large.jpg",
+                "caption": null,
+                "commentable": true,
+                "comment_count": 63,
+                "created_at": "2023-02-17T01:01:11Z",
+                "description": "I freaking love tech house, this one's probably my favorite one from the album, enjoy this No Mana inspired tune ❱•❰\n\nDownload: https://beta.geoxor.moe/downloads\nSpotify: https://open.spotify.com/track/5gJ3UOwfIH9t7V9BCNbCkq\nDiscord: https://discord.gg/geoxor",
+                "downloadable": false,
+                "download_count": 0,
+                "duration": 210521,
+                "full_duration": 210521,
+                "embeddable_by": "all",
+                "genre": "Tech House",
+                "has_downloads_left": false,
+                "id": 1448761579,
+                "kind": "track",
+                "label_name": null,
+                "last_modified": "2023-07-14T14:26:52Z",
+                "license": "all-rights-reserved",
+                "likes_count": 1327,
+                "permalink": "apathy",
+                "permalink_url": "https://soundcloud.com/geoxor/apathy",
+                "playback_count": 50908,
+                "public": true,
+                "publisher_metadata": {
+                    "id": 1448761579,
+                    "urn": "soundcloud:tracks:1448761579",
+                    "artist": "Geoxor",
+                    "contains_music": true,
+                    "isrc": "GRGXR2300002"
                 },
-                "description": "main: @imkotori\n\nKel Type Beats",
-                "followers_count": 3865,
-                "followings_count": 4,
-                "first_name": "",
-                "full_name": "",
-                "groups_count": 0,
-                "id": 211793852,
-                "kind": "user",
-                "last_modified": "2023-09-08T18:01:10Z",
-                "last_name": "",
-                "likes_count": 81,
-                "playlist_likes_count": 11,
-                "permalink": "djkelcore",
-                "permalink_url": "https://soundcloud.com/djkelcore",
-                "playlist_count": 0,
-                "reposts_count": null,
-                "track_count": 9,
-                "uri": "https://api.soundcloud.com/users/211793852",
-                "urn": "soundcloud:users:211793852",
-                "username": "DJ KELSEY",
-                "verified": false,
-                "visuals": {
-                    "urn": "soundcloud:users:211793852",
-                    "enabled": true,
-                    "visuals": [
+                "purchase_title": null,
+                "purchase_url": null,
+                "release_date": null,
+                "reposts_count": 82,
+                "secret_token": null,
+                "sharing": "public",
+                "state": "finished",
+                "streamable": true,
+                "tag_list": "\"No Mana\" ❱•❰",
+                "title": "Geoxor - Apathy",
+                "track_format": "single-track",
+                "uri": "https://api.soundcloud.com/tracks/1448761579",
+                "urn": "soundcloud:tracks:1448761579",
+                "user_id": 100230899,
+                "visuals": null,
+                "waveform_url": "https://wave.sndcdn.com/j8hn8F8Ybz10_m.json",
+                "display_date": "2023-07-14T13:52:01Z",
+                "media": {
+                    "transcodings": [
                         {
-                            "urn": "soundcloud:visuals:200531199",
-                            "entry_time": 0,
-                            "visual_url": "https://i1.sndcdn.com/visuals-000211793852-8VQqpg-original.jpg"
+                            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:1448761579/b1e77630-2ded-441a-8bf2-0aec204962cd/stream/hls",
+                            "preset": "mp3_1_0",
+                            "duration": 210521,
+                            "snipped": false,
+                            "format": {
+                                "protocol": "hls",
+                                "mime_type": "audio/mpeg"
+                            },
+                            "quality": "sq"
+                        },
+                        {
+                            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:1448761579/b1e77630-2ded-441a-8bf2-0aec204962cd/stream/progressive",
+                            "preset": "mp3_1_0",
+                            "duration": 210521,
+                            "snipped": false,
+                            "format": {
+                                "protocol": "progressive",
+                                "mime_type": "audio/mpeg"
+                            },
+                            "quality": "sq"
+                        },
+                        {
+                            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:1448761579/4d6e00b9-e7a7-4851-b763-17e7fa30a31a/stream/hls",
+                            "preset": "opus_0_0",
+                            "duration": 210475,
+                            "snipped": false,
+                            "format": {
+                                "protocol": "hls",
+                                "mime_type": "audio/ogg; codecs=\"opus\""
+                            },
+                            "quality": "sq"
                         }
-                    ],
-                    "tracking": null
+                    ]
                 },
-                "badges": {
-                    "pro": false,
-                    "pro_unlimited": false,
-                    "verified": false
+                "station_urn": "soundcloud:system-playlists:track-stations:1448761579",
+                "station_permalink": "track-stations:1448761579",
+                "track_authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnZW8iOiJKUCIsInN1YiI6IiIsInJpZCI6IjM0NDQ1MTkwLTJlMTUtNDk0ZC1hMDQwLTNkOGUyOWQ0MTg2OSIsImlhdCI6MTY5ODQ4NjE2N30.kqaCqK6k1g29vdEeiVkimLcmnDfCAgdsE-38ErvWIS8",
+                "monetization_model": "NOT_APPLICABLE",
+                "policy": "ALLOW",
+                "user": {
+                    "avatar_url": "https://i1.sndcdn.com/avatars-zKuttZ7yeawKLQ1B-lQNjHQ-large.jpg",
+                    "first_name": "George",
+                    "followers_count": 40424,
+                    "full_name": "George | FAQ in description",
+                    "id": 100230899,
+                    "kind": "user",
+                    "last_modified": "2023-09-20T14:50:59Z",
+                    "last_name": "| FAQ in description",
+                    "permalink": "geoxor",
+                    "permalink_url": "https://soundcloud.com/geoxor",
+                    "uri": "https://api.soundcloud.com/users/100230899",
+                    "urn": "soundcloud:users:100230899",
+                    "username": "Geoxor",
+                    "verified": true,
+                    "city": "Florina",
+                    "country_code": "GR",
+                    "badges": {
+                        "pro": true,
+                        "pro_unlimited": false,
+                        "verified": true
+                    },
+                    "station_urn": "soundcloud:system-playlists:artist-stations:100230899",
+                    "station_permalink": "artist-stations:100230899"
+                }
+            },
+            {
+                "artwork_url": "https://i1.sndcdn.com/artworks-lbBnaTatCpwYozYP-yTEEOg-large.jpg",
+                "caption": null,
+                "commentable": true,
+                "comment_count": 22,
+                "created_at": "2022-09-16T23:56:41Z",
+                "description": "Really glad to have a full future garage tune in this EP, this one blends with Apathy really well, hope you enjoy something more oldschool sounding ❱•❰\n\nDownload: https://beta.geoxor.moe/downloads\nSpotify: https://open.spotify.com/track/346xoVjBIbYIBM34IfK9Ke\nDiscord: https://discord.gg/geoxor",
+                "downloadable": false,
+                "download_count": 0,
+                "duration": 187533,
+                "full_duration": 187533,
+                "embeddable_by": "all",
+                "genre": "Future Garage",
+                "has_downloads_left": false,
+                "id": 1345382338,
+                "kind": "track",
+                "label_name": null,
+                "last_modified": "2023-07-14T14:58:53Z",
+                "license": "all-rights-reserved",
+                "likes_count": 664,
+                "permalink": "silence",
+                "permalink_url": "https://soundcloud.com/geoxor/silence",
+                "playback_count": 24705,
+                "public": true,
+                "publisher_metadata": {
+                    "id": 1345382338,
+                    "urn": "soundcloud:tracks:1345382338",
+                    "artist": "Geoxor",
+                    "contains_music": true,
+                    "isrc": "GRGXR2300003"
                 },
-                "station_urn": "soundcloud:system-playlists:artist-stations:211793852",
-                "station_permalink": "artist-stations:211793852"
+                "purchase_title": null,
+                "purchase_url": null,
+                "release_date": null,
+                "reposts_count": 32,
+                "secret_token": null,
+                "sharing": "public",
+                "state": "finished",
+                "streamable": true,
+                "tag_list": "❱•❰",
+                "title": "Geoxor - Silence",
+                "track_format": "single-track",
+                "uri": "https://api.soundcloud.com/tracks/1345382338",
+                "urn": "soundcloud:tracks:1345382338",
+                "user_id": 100230899,
+                "visuals": null,
+                "waveform_url": "https://wave.sndcdn.com/xFHvJAdluDcz_m.json",
+                "display_date": "2023-07-14T14:58:53Z",
+                "media": {
+                    "transcodings": [
+                        {
+                            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:1345382338/fa10605b-f363-4131-9420-d6242c8bf495/stream/hls",
+                            "preset": "mp3_1_0",
+                            "duration": 187533,
+                            "snipped": false,
+                            "format": {
+                                "protocol": "hls",
+                                "mime_type": "audio/mpeg"
+                            },
+                            "quality": "sq"
+                        },
+                        {
+                            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:1345382338/fa10605b-f363-4131-9420-d6242c8bf495/stream/progressive",
+                            "preset": "mp3_1_0",
+                            "duration": 187533,
+                            "snipped": false,
+                            "format": {
+                                "protocol": "progressive",
+                                "mime_type": "audio/mpeg"
+                            },
+                            "quality": "sq"
+                        },
+                        {
+                            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:1345382338/d9fa47f9-8df5-4628-b42c-ee1551851479/stream/hls",
+                            "preset": "opus_0_0",
+                            "duration": 187507,
+                            "snipped": false,
+                            "format": {
+                                "protocol": "hls",
+                                "mime_type": "audio/ogg; codecs=\"opus\""
+                            },
+                            "quality": "sq"
+                        }
+                    ]
+                },
+                "station_urn": "soundcloud:system-playlists:track-stations:1345382338",
+                "station_permalink": "track-stations:1345382338",
+                "track_authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnZW8iOiJKUCIsInN1YiI6IiIsInJpZCI6Ijg4MzI4MDY2LTBhZmEtNDY3MC1hMGI3LTM4M2JhYjkyMWEzZSIsImlhdCI6MTY5ODQ4NjE2N30.FqnEwHsTLGiLRNe-gruxxyNQQ0_T_W6FG8FOxkuz8t0",
+                "monetization_model": "NOT_APPLICABLE",
+                "policy": "ALLOW",
+                "user": {
+                    "avatar_url": "https://i1.sndcdn.com/avatars-zKuttZ7yeawKLQ1B-lQNjHQ-large.jpg",
+                    "first_name": "George",
+                    "followers_count": 40424,
+                    "full_name": "George | FAQ in description",
+                    "id": 100230899,
+                    "kind": "user",
+                    "last_modified": "2023-09-20T14:50:59Z",
+                    "last_name": "| FAQ in description",
+                    "permalink": "geoxor",
+                    "permalink_url": "https://soundcloud.com/geoxor",
+                    "uri": "https://api.soundcloud.com/users/100230899",
+                    "urn": "soundcloud:users:100230899",
+                    "username": "Geoxor",
+                    "verified": true,
+                    "city": "Florina",
+                    "country_code": "GR",
+                    "badges": {
+                        "pro": true,
+                        "pro_unlimited": false,
+                        "verified": true
+                    },
+                    "station_urn": "soundcloud:system-playlists:artist-stations:100230899",
+                    "station_permalink": "artist-stations:100230899"
+                }
+            },
+            {
+                "artwork_url": "https://i1.sndcdn.com/artworks-lbBnaTatCpwYozYP-yTEEOg-large.jpg",
+                "caption": null,
+                "commentable": true,
+                "comment_count": 80,
+                "created_at": "2022-09-01T21:46:40Z",
+                "description": "The main tune of the album, I think this is my best attempt at dubstep to date ❱•❰\n\nDownload: https://beta.geoxor.moe/downloads\nSpotify: https://open.spotify.com/track/6duBYKLt1MivyFAIpCNduP\nDiscord: https://discord.gg/geoxor",
+                "downloadable": false,
+                "download_count": 0,
+                "duration": 268826,
+                "full_duration": 268826,
+                "embeddable_by": "all",
+                "genre": "Dubstep",
+                "has_downloads_left": false,
+                "id": 1336003060,
+                "kind": "track",
+                "label_name": null,
+                "last_modified": "2023-07-14T15:57:50Z",
+                "license": "all-rights-reserved",
+                "likes_count": 1019,
+                "permalink": "identity",
+                "permalink_url": "https://soundcloud.com/geoxor/identity",
+                "playback_count": 36775,
+                "public": true,
+                "publisher_metadata": {
+                    "id": 1336003060,
+                    "urn": "soundcloud:tracks:1336003060",
+                    "artist": "Geoxor",
+                    "contains_music": true,
+                    "isrc": "GRGXR2300004"
+                },
+                "purchase_title": null,
+                "purchase_url": null,
+                "release_date": null,
+                "reposts_count": 55,
+                "secret_token": null,
+                "sharing": "public",
+                "state": "finished",
+                "streamable": true,
+                "tag_list": "",
+                "title": "Geoxor - Identity",
+                "track_format": "single-track",
+                "uri": "https://api.soundcloud.com/tracks/1336003060",
+                "urn": "soundcloud:tracks:1336003060",
+                "user_id": 100230899,
+                "visuals": null,
+                "waveform_url": "https://wave.sndcdn.com/rqgFdQHmhQDz_m.json",
+                "display_date": "2023-07-14T15:57:50Z",
+                "media": {
+                    "transcodings": [
+                        {
+                            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:1336003060/ab262b77-dde8-4ecb-8ac8-7739a3a15733/stream/hls",
+                            "preset": "mp3_1_0",
+                            "duration": 268826,
+                            "snipped": false,
+                            "format": {
+                                "protocol": "hls",
+                                "mime_type": "audio/mpeg"
+                            },
+                            "quality": "sq"
+                        },
+                        {
+                            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:1336003060/ab262b77-dde8-4ecb-8ac8-7739a3a15733/stream/progressive",
+                            "preset": "mp3_1_0",
+                            "duration": 268826,
+                            "snipped": false,
+                            "format": {
+                                "protocol": "progressive",
+                                "mime_type": "audio/mpeg"
+                            },
+                            "quality": "sq"
+                        },
+                        {
+                            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:1336003060/5baadd6d-832f-4b1e-9ea6-c2fc2fe8c22e/stream/hls",
+                            "preset": "opus_0_0",
+                            "duration": 268807,
+                            "snipped": false,
+                            "format": {
+                                "protocol": "hls",
+                                "mime_type": "audio/ogg; codecs=\"opus\""
+                            },
+                            "quality": "sq"
+                        }
+                    ]
+                },
+                "station_urn": "soundcloud:system-playlists:track-stations:1336003060",
+                "station_permalink": "track-stations:1336003060",
+                "track_authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnZW8iOiJKUCIsInN1YiI6IiIsInJpZCI6ImJlYzViMzYyLWM3YzMtNGY2MC05YzI2LWNkNTk2ZmM3NDQxZiIsImlhdCI6MTY5ODQ4NjE2N30.49KltnjEPK_lQrbCbBqB5xi9yTKiJWwtAtoCL9Y7vYE",
+                "monetization_model": "NOT_APPLICABLE",
+                "policy": "ALLOW",
+                "user": {
+                    "avatar_url": "https://i1.sndcdn.com/avatars-zKuttZ7yeawKLQ1B-lQNjHQ-large.jpg",
+                    "first_name": "George",
+                    "followers_count": 40424,
+                    "full_name": "George | FAQ in description",
+                    "id": 100230899,
+                    "kind": "user",
+                    "last_modified": "2023-09-20T14:50:59Z",
+                    "last_name": "| FAQ in description",
+                    "permalink": "geoxor",
+                    "permalink_url": "https://soundcloud.com/geoxor",
+                    "uri": "https://api.soundcloud.com/users/100230899",
+                    "urn": "soundcloud:users:100230899",
+                    "username": "Geoxor",
+                    "verified": true,
+                    "city": "Florina",
+                    "country_code": "GR",
+                    "badges": {
+                        "pro": true,
+                        "pro_unlimited": false,
+                        "verified": true
+                    },
+                    "station_urn": "soundcloud:system-playlists:artist-stations:100230899",
+                    "station_permalink": "artist-stations:100230899"
+                }
+            },
+            {
+                "artwork_url": "https://i1.sndcdn.com/artworks-lbBnaTatCpwYozYP-yTEEOg-large.jpg",
+                "caption": null,
+                "commentable": true,
+                "comment_count": 53,
+                "created_at": "2023-03-15T08:25:05Z",
+                "description": "An oddly addictive tune, sometimes the weirdest sounds are the ones that are the catchiest ❱•❰\n\nDownload: https://beta.geoxor.moe/downloads\nSpotify: https://open.spotify.com/track/3h4fDv0n1owljg3yzOJLzg\nDiscord: https://discord.gg/geoxor",
+                "downloadable": false,
+                "download_count": 0,
+                "duration": 204408,
+                "full_duration": 204408,
+                "embeddable_by": "all",
+                "genre": "Electro House",
+                "has_downloads_left": false,
+                "id": 1469265913,
+                "kind": "track",
+                "label_name": null,
+                "last_modified": "2023-07-14T16:58:50Z",
+                "license": "all-rights-reserved",
+                "likes_count": 2535,
+                "permalink": "extraterrestrial",
+                "permalink_url": "https://soundcloud.com/geoxor/extraterrestrial",
+                "playback_count": 161891,
+                "public": true,
+                "publisher_metadata": {
+                    "id": 1469265913,
+                    "urn": "soundcloud:tracks:1469265913",
+                    "artist": "Geoxor",
+                    "contains_music": true,
+                    "isrc": "GRGXR2300005"
+                },
+                "purchase_title": null,
+                "purchase_url": null,
+                "release_date": null,
+                "reposts_count": 92,
+                "secret_token": null,
+                "sharing": "public",
+                "state": "finished",
+                "streamable": true,
+                "tag_list": "❱•❰",
+                "title": "Geoxor - Extraterrestrial",
+                "track_format": "single-track",
+                "uri": "https://api.soundcloud.com/tracks/1469265913",
+                "urn": "soundcloud:tracks:1469265913",
+                "user_id": 100230899,
+                "visuals": null,
+                "waveform_url": "https://wave.sndcdn.com/VVutxoGcYN78_m.json",
+                "display_date": "2023-07-14T16:58:30Z",
+                "media": {
+                    "transcodings": [
+                        {
+                            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:1469265913/87d1fdd9-cdbd-4c4d-98a7-b41da30e4ff9/stream/hls",
+                            "preset": "mp3_1_0",
+                            "duration": 204408,
+                            "snipped": false,
+                            "format": {
+                                "protocol": "hls",
+                                "mime_type": "audio/mpeg"
+                            },
+                            "quality": "sq"
+                        },
+                        {
+                            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:1469265913/87d1fdd9-cdbd-4c4d-98a7-b41da30e4ff9/stream/progressive",
+                            "preset": "mp3_1_0",
+                            "duration": 204408,
+                            "snipped": false,
+                            "format": {
+                                "protocol": "progressive",
+                                "mime_type": "audio/mpeg"
+                            },
+                            "quality": "sq"
+                        },
+                        {
+                            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:1469265913/ea228b6c-d5b5-49bf-b986-6bfe72b6c915/stream/hls",
+                            "preset": "opus_0_0",
+                            "duration": 204382,
+                            "snipped": false,
+                            "format": {
+                                "protocol": "hls",
+                                "mime_type": "audio/ogg; codecs=\"opus\""
+                            },
+                            "quality": "sq"
+                        }
+                    ]
+                },
+                "station_urn": "soundcloud:system-playlists:track-stations:1469265913",
+                "station_permalink": "track-stations:1469265913",
+                "track_authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnZW8iOiJKUCIsInN1YiI6IiIsInJpZCI6IjlhNjQ4MTdmLWRkYTktNDA1OS1hNTBjLWUxMWUzOTY3MGUzOCIsImlhdCI6MTY5ODQ4NjE2N30.uzAFqZhcPnJw4mXspjj-jdzFyhKStfNRnNZlFpqWe7Q",
+                "monetization_model": "NOT_APPLICABLE",
+                "policy": "ALLOW",
+                "user": {
+                    "avatar_url": "https://i1.sndcdn.com/avatars-zKuttZ7yeawKLQ1B-lQNjHQ-large.jpg",
+                    "first_name": "George",
+                    "followers_count": 40424,
+                    "full_name": "George | FAQ in description",
+                    "id": 100230899,
+                    "kind": "user",
+                    "last_modified": "2023-09-20T14:50:59Z",
+                    "last_name": "| FAQ in description",
+                    "permalink": "geoxor",
+                    "permalink_url": "https://soundcloud.com/geoxor",
+                    "uri": "https://api.soundcloud.com/users/100230899",
+                    "urn": "soundcloud:users:100230899",
+                    "username": "Geoxor",
+                    "verified": true,
+                    "city": "Florina",
+                    "country_code": "GR",
+                    "badges": {
+                        "pro": true,
+                        "pro_unlimited": false,
+                        "verified": true
+                    },
+                    "station_urn": "soundcloud:system-playlists:artist-stations:100230899",
+                    "station_permalink": "artist-stations:100230899"
+                }
+            },
+            {
+                "artwork_url": "https://i1.sndcdn.com/artworks-lbBnaTatCpwYozYP-yTEEOg-large.jpg",
+                "caption": null,
+                "commentable": true,
+                "comment_count": 66,
+                "created_at": "2022-12-26T14:40:34Z",
+                "description": "My go at drift phonk, turned out pretty well ❱•❰\n\nDownload: https://beta.geoxor.moe/downloads\nSpotify: https://open.spotify.com/track/1cwz4iGMWK2Y52zPN8f4t5\nDiscord: https://discord.gg/geoxor",
+                "downloadable": false,
+                "download_count": 0,
+                "duration": 194116,
+                "full_duration": 194116,
+                "embeddable_by": "all",
+                "genre": "Drift Phonk",
+                "has_downloads_left": false,
+                "id": 1410473680,
+                "kind": "track",
+                "label_name": null,
+                "last_modified": "2023-07-14T17:58:36Z",
+                "license": "all-rights-reserved",
+                "likes_count": 1162,
+                "permalink": "hellscape",
+                "permalink_url": "https://soundcloud.com/geoxor/hellscape",
+                "playback_count": 44790,
+                "public": true,
+                "publisher_metadata": {
+                    "id": 1410473680,
+                    "urn": "soundcloud:tracks:1410473680",
+                    "artist": "Geoxor",
+                    "contains_music": true,
+                    "isrc": "GRGXR2300006"
+                },
+                "purchase_title": null,
+                "purchase_url": null,
+                "release_date": null,
+                "reposts_count": 60,
+                "secret_token": null,
+                "sharing": "public",
+                "state": "finished",
+                "streamable": true,
+                "tag_list": "Phonk ❱•❰",
+                "title": "Geoxor - Hellscape",
+                "track_format": "single-track",
+                "uri": "https://api.soundcloud.com/tracks/1410473680",
+                "urn": "soundcloud:tracks:1410473680",
+                "user_id": 100230899,
+                "visuals": null,
+                "waveform_url": "https://wave.sndcdn.com/AupWtPix7GZb_m.json",
+                "display_date": "2023-07-14T17:58:36Z",
+                "media": {
+                    "transcodings": [
+                        {
+                            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:1410473680/8b77a3b8-4c39-40aa-988a-401d1766ba73/stream/hls",
+                            "preset": "mp3_1_0",
+                            "duration": 194116,
+                            "snipped": false,
+                            "format": {
+                                "protocol": "hls",
+                                "mime_type": "audio/mpeg"
+                            },
+                            "quality": "sq"
+                        },
+                        {
+                            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:1410473680/8b77a3b8-4c39-40aa-988a-401d1766ba73/stream/progressive",
+                            "preset": "mp3_1_0",
+                            "duration": 194116,
+                            "snipped": false,
+                            "format": {
+                                "protocol": "progressive",
+                                "mime_type": "audio/mpeg"
+                            },
+                            "quality": "sq"
+                        },
+                        {
+                            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:1410473680/6d1df88f-e24b-46fb-9101-a6c3c5187b95/stream/hls",
+                            "preset": "opus_0_0",
+                            "duration": 194093,
+                            "snipped": false,
+                            "format": {
+                                "protocol": "hls",
+                                "mime_type": "audio/ogg; codecs=\"opus\""
+                            },
+                            "quality": "sq"
+                        }
+                    ]
+                },
+                "station_urn": "soundcloud:system-playlists:track-stations:1410473680",
+                "station_permalink": "track-stations:1410473680",
+                "track_authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnZW8iOiJKUCIsInN1YiI6IiIsInJpZCI6IjkxZjc2NWNjLWMxNTYtNGFlMC1hM2NjLTVlYTAwODY1ZGE2NCIsImlhdCI6MTY5ODQ4NjE2N30.7d9e25eua3EG47tfot-EtqZTDNjxfMwCxwtpeDQov3Y",
+                "monetization_model": "NOT_APPLICABLE",
+                "policy": "ALLOW",
+                "user": {
+                    "avatar_url": "https://i1.sndcdn.com/avatars-zKuttZ7yeawKLQ1B-lQNjHQ-large.jpg",
+                    "first_name": "George",
+                    "followers_count": 40424,
+                    "full_name": "George | FAQ in description",
+                    "id": 100230899,
+                    "kind": "user",
+                    "last_modified": "2023-09-20T14:50:59Z",
+                    "last_name": "| FAQ in description",
+                    "permalink": "geoxor",
+                    "permalink_url": "https://soundcloud.com/geoxor",
+                    "uri": "https://api.soundcloud.com/users/100230899",
+                    "urn": "soundcloud:users:100230899",
+                    "username": "Geoxor",
+                    "verified": true,
+                    "city": "Florina",
+                    "country_code": "GR",
+                    "badges": {
+                        "pro": true,
+                        "pro_unlimited": false,
+                        "verified": true
+                    },
+                    "station_urn": "soundcloud:system-playlists:artist-stations:100230899",
+                    "station_permalink": "artist-stations:100230899"
+                }
             }
-        }
+        ],
+        "track_count": 5,
+        "url": "/geoxor/sets/identity"
     }
-]
+}

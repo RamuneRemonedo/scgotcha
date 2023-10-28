@@ -6,8 +6,10 @@ import net.ramuremo.scgotcha.model.CreatorSubscription;
 import net.ramuremo.scgotcha.model.User;
 import net.ramuremo.scgotcha.model.VisualsField;
 
-public class UserInterpreter {
-    public static User interpret(JsonObject json) {
+public class UserInterpreter implements Interpreter<User> {
+
+    @Override
+    public User interpret(JsonObject json) {
         if (json == null) return null;
         return new User() {
             @Override
@@ -27,7 +29,7 @@ public class UserInterpreter {
 
             @Override
             public VisualsField visuals() {
-                return VisualsFieldInterpreter.interpret(json.get("visuals").getAsJsonObject());
+                return new VisualsFieldInterpreter().interpret(json.get("visuals").getAsJsonObject());
             }
 
             @Override
