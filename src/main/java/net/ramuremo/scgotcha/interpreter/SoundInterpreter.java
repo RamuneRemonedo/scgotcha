@@ -4,8 +4,6 @@ import com.google.gson.JsonObject;
 import net.ramuremo.scgotcha.model.*;
 
 public class SoundInterpreter {
-    private static final String JSON_STARTSWITH_PREFIX = "<script>window.__sc_hydration = ";
-
     public static Sound interpret(JsonObject json) {
         if (json == null) return null;
         if (validate(json)) throw new IllegalArgumentException("Invalid userHydratableJsonObject");
@@ -220,8 +218,7 @@ public class SoundInterpreter {
             @Override
             public Media media() {
                 JsonObject mediaObject = dataObject.get("media").getAsJsonObject();
-                return new Media() {
-                };
+                return MediaInterpreter.interpret(mediaObject);
             }
 
             @Override
