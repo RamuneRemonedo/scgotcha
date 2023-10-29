@@ -17,7 +17,6 @@ import java.io.*;
 import java.net.URL;
 import java.net.URLConnection;
 import java.nio.file.Files;
-import java.nio.file.StandardCopyOption;
 
 public class SoundCloudHandler {
 
@@ -33,9 +32,15 @@ public class SoundCloudHandler {
     }
 
     public static void saveSound(Playlist playlist) throws Exception {
-        for (Sound track : playlist.tracks()) {
-            fetchAndSaveMP3(track);
-            modifyMP3(playlist, track);
+        for (Sound sound : playlist.tracks()) {
+            try {
+                fetchAndSaveMP3(sound);
+                modifyMP3(playlist, sound);
+            } catch (NullPointerException e) {
+                Sound fixedSound = fetchSoundByIdURL(URLFactory.createSoundIdUrl(sound.id()));
+                fetchAndSaveMP3(fixedSound);
+                modifyMP3(playlist, fixedSound);
+            }
         }
     }
 
@@ -44,15 +49,22 @@ public class SoundCloudHandler {
                 .filter(t -> t.format().mime_type().contains("mpeg") && t.format().protocol().equals("hls"))
                 .findFirst()
                 .orElse(null);
-        String url = transcoding.url() + "?client_id=odn1E9M0osmPI1UsMDnFDuKcK5WSjS7s"
-                + "&track_authorization=" + sound.trackAuthorization() +
-                "&limit=100";
-        url = fetchMediaRedirect(url);
-        fetchAndSaveM3U(url);
+        String url = URLFactory.createMediaUrl(transcoding.url(), sound.trackAuthorization());
+        String rawAudioUrl = fetchMediaRedirect(url);
+        fetchAndSaveM3U(rawAudioUrl);
         convertM3UToMP3();
     }
 
-    public static void convertM3UToMP3() throws Exception {
+    private static Sound fetchSound(String url) throws Exception {
+        for (JsonElement element : fetchJsonByParmaURL(url)) {
+            if (element.getAsJsonObject().get("hydratable").getAsString().equals("sound")) {
+                return new SoundInterpreter().interpret(element.getAsJsonObject());
+            }
+        }
+        return null;
+    }
+
+    private static void convertM3UToMP3() throws Exception {
         File mp3 = new File("./music/temp/music.mp3");
         if (mp3.exists()) mp3.delete();
 
@@ -79,7 +91,7 @@ public class SoundCloudHandler {
         outputThread.join();
     }
 
-    public static String fetchMediaRedirect(String url) throws Exception {
+    private static String fetchMediaRedirect(String url) throws Exception {
         URLConnection connection = new URL(url).openConnection();
         connection.connect();
         String responseBody = new String(connection.getInputStream().readAllBytes());
@@ -88,7 +100,7 @@ public class SoundCloudHandler {
         return json.get("url").getAsString();
     }
 
-    public static File fetchAndSaveM3U(String url) throws Exception {
+    private static File fetchAndSaveM3U(String url) throws Exception {
         URLConnection connection = new URL(url).openConnection();
         connection.connect();
         File dir = new File("./music/temp");
@@ -99,9 +111,9 @@ public class SoundCloudHandler {
         return file;
     }
 
-    public static void modifyMP3(Playlist playlist, Sound sound) throws Exception {
+    private static void modifyMP3(Playlist playlist, Sound sound) throws Exception {
         File tempAudio = new File("./music/temp/music.mp3");
-        File dir = new File("./music/" + sound.user().username() + "/" + playlist.title());
+        File dir = new File("./music/" + playlist.user().username() + "/" + playlist.title());
         dir.mkdirs();
 
         Mp3File audio = new Mp3File(tempAudio);
@@ -117,7 +129,7 @@ public class SoundCloudHandler {
         audio.save("./music/" + sound.user().username() + "/" + playlist.title() + "/" + sound.title() + ".mp3");
     }
 
-    public static void modifyMP3(Sound sound) throws Exception {
+    private static void modifyMP3(Sound sound) throws Exception {
         File tempAudio = new File("./music/temp/music.mp3");
         File dir = new File("./music/" + sound.user().username());
         dir.mkdirs();
@@ -134,16 +146,16 @@ public class SoundCloudHandler {
     }
 
     public static @Nullable Sound fetchSingle(String url) throws Exception {
-        for (JsonElement element : fetch(url)) {
+        for (JsonElement element : fetchJsonByParmaURL(url)) {
             if (element.getAsJsonObject().get("hydratable").getAsString().equals("sound")) {
-                return new SoundInterpreter().interpret(element.getAsJsonObject());
+                return new SoundInterpreter().interpret(element.getAsJsonObject().get("data").getAsJsonObject());
             }
         }
         return null;
     }
 
     public static @Nullable Playlist fetchPlaylist(String url) throws Exception {
-        for (JsonElement element : fetch(url)) {
+        for (JsonElement element : fetchJsonByParmaURL(url)) {
             if (element.getAsJsonObject().get("hydratable").getAsString().equals("playlist")) {
                 return new PlaylistInterpreter().interpret(element.getAsJsonObject());
             }
@@ -151,7 +163,7 @@ public class SoundCloudHandler {
         return null;
     }
 
-    public static JsonArray fetch(String url) throws Exception {
+    private static JsonArray fetchJsonByParmaURL(String url) throws Exception {
         URLConnection connection = new URL(url).openConnection();
         connection.connect();
         String responseBody = new String(connection.getInputStream().readAllBytes());
@@ -164,6 +176,15 @@ public class SoundCloudHandler {
         if (json.isBlank()) throw new RuntimeException("Could not find JSON in response body");
 
         return new Gson().fromJson(json, JsonArray.class);
+    }
+
+    public static Sound fetchSoundByIdURL(String url) throws Exception {
+        URLConnection connection = new URL(url).openConnection();
+        connection.connect();
+        String responseBody = new String(connection.getInputStream().readAllBytes());
+        JsonObject json = new Gson().fromJson(responseBody, JsonObject.class);
+        Sound sound = new SoundInterpreter().interpret(json);
+        return sound;
     }
 
     public static byte[] fetchArtwork(Sound sound) throws Exception {
