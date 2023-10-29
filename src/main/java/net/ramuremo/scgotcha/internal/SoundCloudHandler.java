@@ -17,6 +17,7 @@ import java.io.*;
 import java.net.URL;
 import java.net.URLConnection;
 import java.nio.file.Files;
+import java.nio.file.InvalidPathException;
 
 public class SoundCloudHandler {
 
@@ -126,7 +127,13 @@ public class SoundCloudHandler {
         tag.setAlbum(playlist.title());
         tag.setDate(sound.createdAt());
         audio.setId3v2Tag(tag);
-        audio.save("./music/" + sound.user().username() + "/" + playlist.title() + "/" + sound.title() + ".mp3");
+        try {
+            audio.save("./music/" + sound.user().username() + "/" + playlist.title() + "/" + sound.title() + ".mp3");
+        } catch (InvalidPathException e) {
+            File fixedDir = new File("./music/" + sound.user().username() + "/" + playlist.permalink());
+            fixedDir.mkdirs();
+            audio.save("./music/" + sound.user().username() + "/" + playlist.permalink() + "/" + sound.permalink() + ".mp3");
+        }
     }
 
     private static void modifyMP3(Sound sound) throws Exception {
@@ -142,7 +149,13 @@ public class SoundCloudHandler {
         tag.setGenreDescription(sound.genre());
         tag.setDate(sound.createdAt());
         audio.setId3v2Tag(tag);
-        audio.save("./music/" + sound.user().username() + "/" + sound.title() + ".mp3");
+        try {
+            audio.save("./music/" + sound.user().username() + "/" + sound.title() + ".mp3");
+        } catch (InvalidPathException e) {
+            File fixedDir = new File("./music/" + toFixedPath(sound.user().username()));
+            fixedDir.mkdirs();
+            audio.save("./music/" + toFixedPath(sound.user().username()) + "/" + toFixedPath(sound.permalink()) + ".mp3");
+        }
     }
 
     public static @Nullable Sound fetchSingle(String url) throws Exception {
@@ -191,5 +204,9 @@ public class SoundCloudHandler {
         URLConnection connection = new URL(sound.artworkUrl().replace("large.jpg", "t500x500.jpg")).openConnection();
         connection.connect();
         return connection.getInputStream().readAllBytes();
+    }
+
+    private static String toFixedPath(String path) {
+        return path.replaceAll("[:*?\"<>|]", "_").replace("/", "-");
     }
 }
